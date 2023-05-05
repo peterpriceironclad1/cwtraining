@@ -30416,9 +30416,13 @@
   
   function setRenderData() {
     var companyVal = document.getElementById("progressive:j_id48:j_id49:progressive-card-form:inputCompanyName").value;
+    var trialVal = document.getElementById("progressive:j_id48:j_id49:progressive-card-form:inputCountry").value;
+    var governinglawVal = document.getElementById("progressive:j_id48:j_id49:progressive-card-form:inputState").value;
   
     var renderData = {
       Company: companyVal,
+      TrialPurpose: trailVal,
+      GoverningLaw: governinglawVal
     };
   
     _ps("embedded-zfa698bwl:retrieveHTML", renderData);
@@ -30426,6 +30430,7 @@
   
   function setCustomData() {
     var RoleVal = document.getElementById("progressive:j_id48:j_id49:progressive-card-form:inputRoleName").value;
+  
     var customData = {
       Role: RoleVal,
           };
